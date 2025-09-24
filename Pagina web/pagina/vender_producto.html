@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vender Producto</title>
+<style>
+    /* Estilos generales */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff0f5; /* Rosa pastel */
+        color: #333;
+    }
+
+    /* Cabecera */
+    .header {
+        background: linear-gradient(90deg, #ff6f91, #ff9a9e);
+        padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header img {
+        height: 60px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Contenedor del formulario */
+    .form-container {
+        max-width: 500px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+        text-align: center;
+        color: #ff6f91;
+        margin-bottom: 25px;
+        font-size: 24px;
+    }
+
+    .form-container label {
+        font-weight: bold;
+        display: block;
+        margin-top: 15px;
+    }
+
+    .form-container input,
+    .form-container textarea,
+    .form-container select {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+
+    .form-container button {
+        margin-top: 20px;
+        width: 100%;
+        padding: 12px;
+        background-color: #ff6f91;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        font-size: 1.1em;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .form-container button:hover {
+        background-color: #ff9a9e;
+    }
+
+    /* Botón de regreso */
+    .back-button {
+        display: block;
+        margin: 30px auto;
+        padding: 12px 25px;
+        background-color: #ff6f91;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 25px;
+        width: 220px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+        background-color: #ff9a9e;
+    }
+</style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <div class="header">
+        <img src="img/imagen3.jpg" alt="Logo de la Tienda">
+    </div>
+
+    <!-- Formulario para vender producto -->
+    <div class="form-container">
+        <h2>Vender un Producto</h2>
+        <form action="guardar_producto.php" method="POST" enctype="multipart/form-data">
+            <label for="nombre_producto">Nombre del Producto:</label>
+            <input type="text" id="nombre_producto" name="nombre_producto" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" step="0.01" required>
+
+            <label for="cantidad">Cantidad en Stock:</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+            
+            <label for="imagen">Imagen del Producto:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*" required>
+
+           
+
+
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="1">Brillos y colores mágicos para labios</option>
+                <option value="2">Tonos suaves para mejillas sonrojadas</option>
+                <option value="3">Paletas de ensueño y delineadores brillantes</option>
+                <option value="4">Colores vibrantes para uñas perfectas</option>
+                <option value="5">Kits completos para princesas</option>
+                <option value="6">Brochas, espejos y organizadores</option>
+                <option value="7">Productos suaves para la piel</option>
+
+            </select>
+
+            <button type="submit">Agregar Producto</button>
+        </form>
+    </div>
+
+    <!-- Botón regresar -->
+    <a href="index.php" class="back-button">Regresar a Inicio</a>
+</body>
+</html>

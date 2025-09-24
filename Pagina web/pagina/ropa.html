@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para la cabecera */
+        .header {
+            background-color: #f30049;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .header .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Barra de navegación */
+        .nav {
+            background-color: #000000;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: rgb(236, 232, 232);
+            font-weight: bold;
+        }
+
+        /* Banner */
+        .banner {
+            background-image: url('../imagenes/ropabaner.jpg'); /* Ruta relativa */
+            background-size: cover;
+            background-position: center;
+            height: 420px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 5, 5);
+            font-size: 0px;
+            font-weight: bold;
+        }
+
+        
+   /* Estilos para la sección de categorías */
+   .product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.product-item {
+    width: 180px;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.product-item img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.product-item p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.envio-gratis {
+    color: green;
+    font-weight: bold;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+        /* Pie de página */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <div class="header">
+        <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\imagen3.jpg" alt="Logo de la Tienda">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos...">
+            <button>Buscar</button>
+        </div>
+    </div>
+
+    <!-- Barra de navegación -->
+    <div class="nav">
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\barra\categoria.html">Categorías</a>
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\barra\ayuda.html">Ayuda</a>
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\barra\cuenta.html">Cuenta</a>
+    </div>
+
+<!-- Banner principal -->
+<div class="banner"></div>
+
+<!-- Sección de productos -->
+<div class="product-list">
+    <!-- Producto 1: Sudadera Nike -->
+    <div class="product-item">
+        <a href="file:///C:/Users/Lap1/Documents/Proyecto/pagina/ropa/sudadera.html" class="product-link">
+            <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\sudadera.jpg" alt="Sudadera Nike">
+            <h3>Sudadera Nike Hombre</h3>
+            <p>$899</p>
+            <p>en 6 meses de $149.83</p>
+            <span class="envio-gratis">Envío gratis</span>
+        </a>
+    </div>
+
+    <!-- Producto 2: Bolsa de Mano -->
+    <div class="product-item">
+        <a href="file:///C:/Users/Lap1/Documents/Proyecto/pagina/ropa/bolsa.html" class="product-link">
+            <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\bolsa.jpg" alt="Bolsa de Mano">
+            <h3>Bolsa de Mano Elegante</h3>
+            <p>$1,299</p>
+            <p>en 12 meses de $108.25</p>
+            <span class="envio-gratis">Envío gratis</span>
+        </a>
+    </div>
+
+    <!-- Producto 3: Tenis Adidas -->
+    <div class="product-item">
+        <a href="file:///C:/Users/Lap1/Documents/Proyecto/pagina/ropa/tenis.html" class="product-link">
+            <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\tenis.jpg" alt="Tenis Adidas">
+            <h3>Tenis Adidas Running</h3>
+            <p>$1,499</p>
+            <p>en 12 meses de $124.92</p>
+            <span class="envio-gratis">Envío gratis</span>
+        </a>
+    </div>
+
+    <!-- Producto 4: Gafas de Sol -->
+    <div class="product-item">
+        <a href="file:///C:/Users/Lap1/Documents/Proyecto/pagina/ropa/gafas.html" class="product-link">
+            <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\gafas.jpg" alt="Gafas de Sol">
+            <h3>Gafas de Sol Ray-Ban</h3>
+            <p>$1,599</p>
+            <p>en 12 meses de $133.25</p>
+            <span class="envio-gratis">Envío gratis</span>
+        </a>
+    </div>
+
+    <!-- Producto 5: Reloj de Pulsera -->
+    <div class="product-item">
+        <a href="file:///C:/Users/Lap1/Documents/Proyecto/pagina/ropa/reloj.html" class="product-link">
+            <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\reloj.jpg" alt="Reloj de Pulsera">
+            <h3>Reloj Casio Clásico</h3>
+            <p>$499</p>
+            <p>en 3 meses de $166.33</p>
+            <span class="envio-gratis">Envío gratis</span>
+        </a>
+    </div>
+</div>
+
+
+    <!-- Pie de página -->
+    <div class="footer">
+        <p>&copy; 2024 Tienda Online.</p>
+    </div>
+</body>
+</html>

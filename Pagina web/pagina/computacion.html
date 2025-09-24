@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para la cabecera */
+        .header {
+            background-color: #f30049;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .header .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Barra de navegación */
+        .nav {
+            background-color: #000000;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: rgb(236, 232, 232);
+            font-weight: bold;
+        }
+
+        /* Banner */
+        .banner {
+            background-image: url('../imagenes/computacionbaner.jpg'); /* Ruta relativa */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(90, 5, 5);
+            font-size: 90px;
+            font-weight: bold;
+        }
+
+        
+   /* Estilos para la sección de categorías */
+   .product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.product-item {
+    width: 180px;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.product-item img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.product-item p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.envio-gratis {
+    color: green;
+    font-weight: bold;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+        /* Pie de página */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <div class="header">
+        <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\imagen3.jpg" alt="Logo de la Tienda">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos...">
+            <button>Buscar</button>
+        </div>
+    </div>
+
+    <!-- Barra de navegación -->
+    <div class="nav">
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\barra\categoria.html">Categorías</a>
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\barra\ayuda.html">Ayuda</a>
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\barra\cuenta.html">Cuenta</a>
+    </div>
+
+    <!-- Banner principal -->
+    <div class="banner"></div>
+
+  <!-- Sección de productos -->
+<div class="product-list">
+    <!-- Producto 1: Laptop HP -->
+    <div class="product-item">
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\computacion\laptop_hp.html" class="product-link">
+            <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\laptop_hp.jpg" alt="Laptop HP">
+            <h3>Laptop HP Core i5 8GB RAM</h3>
+            <p>$9,999</p>
+            <p>en 12 meses de $833.25</p>
+            <span class="envio-gratis">Envío gratis</span>
+        </a>
+    </div>
+
+    <!-- Producto 2: Teclado Mecánico -->
+    <div class="product-item">
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\computacion\teclado_mecanico.html" class="product-link">
+            <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\teclado_mecanico.jpg" alt="Teclado Mecánico">
+            <h3>Teclado Mecánico RGB Gamer</h3>
+            <p>$799</p>
+            <p>en 6 meses de $133.17</p>
+            <span class="envio-gratis">Envío gratis</span>
+        </a>
+    </div>
+
+    <!-- Producto 3: Monitor Gaming -->
+    <div class="product-item">
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\computacion\monitor_gaming.html" class="product-link">
+            <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\monitor_gaming.jpg" alt="Monitor Gaming">
+            <h3>Monitor Gaming 24" 144Hz</h3>
+            <p>$4,499</p>
+            <p>en 12 meses de $374.92</p>
+            <span class="envio-gratis">Envío gratis</span>
+        </a>
+    </div>
+
+    <!-- Producto 4: Mouse Gamer -->
+    <div class="product-item">
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\computacion\mouse_gamer.html" class="product-link">
+            <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\mouse_gamer.jpg" alt="Mouse Gamer">
+            <h3>Mouse Gamer Inalámbrico RGB</h3>
+            <p>$399</p>
+            <p>en 3 meses de $133.00</p>
+            <span class="envio-gratis">Envío gratis</span>
+        </a>
+    </div>
+
+    <!-- Producto 5: Disco Duro Externo -->
+    <div class="product-item">
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\computacion\disco_duro.html" class="product-link">
+            <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\disco_duro.jpg" alt="Disco Duro Externo">
+            <h3>Disco Duro Externo 1TB</h3>
+            <p>$1,299</p>
+            <p>en 6 meses de $216.50</p>
+            <span class="envio-gratis">Envío gratis</span>
+        </a>
+    </div>
+</div>
+
+    
+    
+    <!-- Pie de página -->
+    <div class="footer">
+        <p>&copy; 2024 Tienda Online.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicicleta Estática Plegable - Tienda Online</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para la cabecera */
+        .header {
+            background-color: #f30049;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .header .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Barra de navegación */
+        .nav {
+            background-color: #000000;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: rgb(236, 232, 232);
+            font-weight: bold;
+        }
+
+        /* Estilos del carrito */
+        .cart {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .cart img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .cart span {
+            margin-right: 10px;
+        }
+
+        /* Estilos del producto */
+        .product-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-gallery {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-image {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .main-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-details {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .product-price {
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        .installments {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .envio-gratis {
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        .btn-comprar, .btn-carrito {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-comprar {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+
+        .btn-carrito {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .product-features {
+            margin-top: 20px;
+        }
+
+        .product-features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-features li {
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <div class="header">
+        <img src="C:/Users/Lap1/Documents/Proyecto/imagenes/imagen3.jpg" alt="Logo de la Tienda">
+        
+        <!-- Carrito de compras -->
+        <div class="cart">
+            <img src="C:/Users/Lap1/Documents/Proyecto/imagenes/carrito.png" alt="Carrito">
+            <span id="cart-count">0</span> items
+        </div>
+
+        <!-- Barra de búsqueda -->
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos...">
+            <button>Buscar</button>
+        </div>
+    </div>
+
+    <!-- Barra de navegación -->
+    <div class="nav">
+        <a href="#">Categorías</a>
+        <a href="#">Ayuda</a>
+        <a href="#">Cuenta</a>
+    </div>
+
+    <!-- Detalle del producto -->
+    <div class="product-container">
+        <!-- Imagen del producto -->
+        <div class="product-gallery">
+            <div class="main-image">
+                <img src="C:/Users/Lap1/Documents/Proyecto/imagenes/bicicleta.jpg" alt="Bicicleta Estática Plegable">
+            </div>
+        </div>
+
+        <!-- Detalles del producto -->
+        <div class="product-details">
+            <h1>Bicicleta Estática Plegable</h1>
+            <p class="product-price">$3,499</p>
+            <p class="installments">en 12 meses de $291.58</p>
+            <span class="envio-gratis">Envío gratis</span>
+
+            <button class="btn-comprar">Comprar ahora</button>
+            <button class="btn-carrito" onclick="addToCart()">Agregar al carrito</button>
+
+            <!-- Características del producto -->
+            <div class="product-features">
+                <h3>Características del producto</h3>
+                <ul>
+                    <li>Marca: X-Bike</li>
+                    <li>Modelo: Plegable</li>
+                    <li>Resistencia ajustable</li>
+                    <li>Pantalla LCD</li>
+                    <li>Soporta hasta 120 kg</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="footer">
+        <p>&copy; 2024 Tienda Online.</p>
+    </div>
+
+    <script>
+        // Inicialización del carrito
+        let cartCount = 0;
+
+        // Función para agregar al carrito
+        function addToCart() {
+            cartCount++;
+            document.getElementById("cart-count").textContent = cartCount;
+        }
+
+        // Función para comprar ahora
+        function buyNow() {
+            alert("Producto comprado!");
+            cartCount = 0;  // Resetear el carrito al hacer la compra
+            document.getElementById("cart-count").textContent = cartCount;
+        }
+    </script>
+
+</body>
+</html>

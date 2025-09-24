@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para la cabecera */
+        .header {
+            background-color: #f30049;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .header .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Barra de navegación */
+        .nav {
+            background-color: #000000;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: rgb(236, 232, 232);
+            font-weight: bold;
+        }
+
+        /* Banner */
+        .banner {
+            background-image: url('../imagenes/electrodomesticos.jpg'); /* Ruta relativa */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(70, 10, 10);
+            font-size: 0px;
+            font-weight: bold;
+        }
+/*productos*/
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.product-item {
+    width: 180px;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.product-item img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.product-item p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.envio-gratis {
+    color: green;
+    font-weight: bold;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+        
+  
+        /* Pie de página */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <div class="header">
+        <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\imagen3.jpg" alt="Logo de la Tienda">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos...">
+            <button>Buscar</button>
+        </div>
+    </div>
+
+    <!-- Barra de navegación -->
+    <div class="nav">
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\barra\categoria.html">Categorías</a>
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\barra\ayuda.html">Ayuda</a>
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\barra\cuenta.html">Cuenta</a>
+    </div>
+
+
+    <!-- Banner principal -->
+    <div class="banner"></div>
+
+    <!-- Sección de productos -->
+<div class="product-list">
+    <!-- Producto 1: Refrigerador LG -->
+    <div class="product-item">
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\electrodomesticos\refrigerador_lg.html" class="product-link">
+            <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\refrigerador_lg.jpg" alt="Refrigerador LG">
+            <h3>Refrigerador LG Smart</h3>
+            <p>$15,499</p>
+            <p>en 24 meses de $875</p>
+            <span class="envio-gratis">Envío gratis</span>
+        </a>
+    </div>
+
+    <!-- Producto 2: Lavadora Samsung -->
+    <div class="product-item">
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\electrodomesticos\lavadora_samsun.html" class="product-link">
+            <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\lavadora_samsung.jpg" alt="Lavadora Samsung">
+            <h3>Lavadora Samsung 20kg</h3>
+            <p>$9,999</p>
+            <p>en 24 meses de $583</p>
+            <span class="envio-gratis">Envío gratis</span>
+        </a>
+    </div>
+
+    <!-- Producto 3: Microondas Panasonic -->
+    <div class="product-item">
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\electrodomesticos\microondas_panasonic.html" class="product-link">
+            <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\microondas_panasonic.jpg" alt="Microondas Panasonic">
+            <h3>Microondas Panasonic 25L</h3>
+            <p>$2,499</p>
+            <p>en 12 meses de $208</p>
+            <span class="envio-gratis">Envío gratis</span>
+        </a>
+    </div>
+
+    <!-- Producto 4: Cafetera Nespresso -->
+    <div class="product-item">
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\electrodomesticos\cafetera_nespresso.html" class="product-link">
+            <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\cafetera_nespresso.jpg" alt="Cafetera Nespresso">
+            <h3>Cafetera Nespresso</h3>
+            <p>$3,299</p>
+            <p>en 12 meses de $275</p>
+            <span class="envio-gratis">Envío gratis</span>
+        </a>
+    </div>
+
+    <!-- Producto 5: Horno Eléctrico Oster -->
+    <div class="product-item">
+        <a href="C:\Users\Lap1\Documents\Proyecto\pagina\electrodomesticos\horno_oster.html" >
+            <img src="C:\Users\Lap1\Documents\Proyecto\imagenes\horno_oster.jpg" alt="Horno Eléctrico Oster">
+            <h3>Horno Eléctrico Oster</h3>
+            <p>$1,899</p>
+            <p>en 6 meses de $316</p>
+            <span class="envio-gratis">Envío gratis</span>
+        </a>
+    </div>
+</div>
+
+    
+    <!-- Pie de página -->
+    <div class="footer">
+        <p>&copy; 2024 Tienda Online.</p>
+    </div>
+</body>
+</html>
