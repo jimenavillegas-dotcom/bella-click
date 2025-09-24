@@ -34,3 +34,9 @@ Sitio web que permite explorar productos de maquillaje/cuidado personal y simula
    $db   = 'mercado_libre'; // usa el mismo nombre que creaste/importaste
    $user = 'root';
    $pass = '';
+## 👥 Integrantes 
+- Arriaga Aguilar, Nancy
+- Flores Tapia, Gregorio
+- Hernandez Solis, Yordi Uriel
+- Torres Coronel, Carlos
+- Villegas Ramírez, Jimena
